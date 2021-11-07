@@ -15,6 +15,7 @@ body {
   background-color: #f7f7f7;
   padding: 20px 40px; /* first value is top and bottom, second is left and right */
   margin-bottom: 60px;
+  height: 80px;
 }
 
 nav {
@@ -34,6 +35,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0px;
+  width: 500px;
 }
 
 h1,
@@ -151,6 +153,11 @@ a:active {
   font-style: italic;
 }
 
+.post-image {
+  width: 100%; /* % is related to the parent container */
+  height: auto; /* setting this for preserving aspect ratio is only necessary if the size was alread set on HTML. 
+  because the default is auto */
+}
 /* Resolving conflicts */
 /* #copyright {
   color: red;
